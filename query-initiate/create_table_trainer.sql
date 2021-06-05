@@ -1,5 +1,6 @@
 CREATE TABLE trainer (
     id BIGSERIAL NOT NULL PRIMARY KEY
+    ,discord VARCHAR NOT NULL
     ,battlefy VARCHAR NOT NULL
     ,twitter VARCHAR
     ,realname VARCHAR
