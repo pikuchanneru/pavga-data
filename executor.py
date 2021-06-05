@@ -119,8 +119,6 @@ def insert_data(query, conn, cur, df, page_size):
 
 
 if __name__ == "__main__":
-    # TODO: Change filename
-    query_fn = '200606-01 upsert-trainer-minor1.sql'
     
     # Set paths
     os.chdir(os.path.dirname(os.path.realpath(__file__)))
@@ -137,6 +135,22 @@ if __name__ == "__main__":
     connection = psycopg2.connect(**conn_info)
     cursor = connection.cursor()
 
+    # # TODO: Change filename
+    # query_fn = '200606-01 upsert-trainer-minor1.sql'
+    # path_q = os.path.join(os.getcwd(), "query", query_fn)
+    # with open(path_q, "r", encoding="utf8") as file:
+    #     query = file.read()
+    # execute(query, connection, cursor)
+
+    # # TODO: Change filename
+    # query_fn = '200606-02 upsert-tournament-minor1.sql'
+    # path_q = os.path.join(os.getcwd(), "query", query_fn)
+    # with open(path_q, "r", encoding="utf8") as file:
+    #     query = file.read()
+    # execute(query, connection, cursor)
+
+    # TODO: Change filename
+    query_fn = '200606-03 upsert-standing-minor1-d1.sql'
     path_q = os.path.join(os.getcwd(), "query", query_fn)
     with open(path_q, "r", encoding="utf8") as file:
         query = file.read()

@@ -1,5 +1,5 @@
 CREATE TABLE standing (
-    id BIGINT NOT NULL PRIMARY KEY
+    id BIGSERIAL NOT NULL PRIMARY KEY
     ,tournament_id BIGINT NOT NULL
     ,trainer_id BIGINT NOT NULL
     ,team VARCHAR[] NOT NULL
