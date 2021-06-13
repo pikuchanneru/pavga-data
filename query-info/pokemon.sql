@@ -97,6 +97,6 @@ FROM
     AND uu.pokemon = rw.pokemon
     LEFT JOIN ptsum ps ON uu.tournament_id = ps.tournament_id
 WHERE
-    uu.tournament_id = 1
+    uu.tournament_id = 2
 ORDER BY
-    usage_share DESC
+    usage_share DESC, winrate DESC, pt_share DESC
