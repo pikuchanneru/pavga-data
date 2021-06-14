@@ -108,11 +108,23 @@ entire as (
         usage_share DESC,
         winrate DESC,
         pt_share DESC
+),
+totalhead AS (
+    select
+        sum(headcount) as total
+    from
+        tournament
+),
+totalpt AS (
+    select
+        sum(point_award) as total
+    from
+        standing
 )
 SELECT
     pokemon,
     sum(count) as "count",
-    round(sum(count) / sum(helper_count) :: DECIMAL, 4) AS "usage_share",
+    round(sum(count) / th.total :: DECIMAL, 4) AS "usage_share",
     sum(win) as "win",
     sum(draw) as "draw",
     sum(loss) as "loss",
@@ -125,11 +137,15 @@ SELECT
         )
     END AS winrate,
     sum(pt) as "pt",
-    round(sum(pt) / sum(helper_pt) :: DECIMAL, 4) AS "pt_share"
+    round(sum(pt) / tp.total :: DECIMAL, 4) AS "pt_share"
 FROM
-    entire
+    entire,
+    totalhead th,
+    totalpt tp
 GROUP BY
-    pokemon
+    pokemon,
+    th.total,
+    tp.total
 ORDER BY
     usage_share DESC,
     winrate DESC,
