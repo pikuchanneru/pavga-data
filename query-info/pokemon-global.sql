@@ -3,7 +3,7 @@ WITH teams AS (
         tournament_id,
         team,
         two_nil + two_one AS win,
-        nil_two + one_two + double_loss AS loss,
+        nil_two + one_two AS loss,
         draw,
         point_award
     FROM
@@ -83,10 +83,14 @@ entire as (
         rr.win,
         rr.draw,
         rr.loss,
-        round(
-            rr.win / rr.match_played :: DECIMAL,
-            4
-        ) AS winrate,
+        CASE
+            rr.match_played
+            WHEN 0 THEN 0
+            ELSE round(
+                rr.win / rr.match_played :: DECIMAL,
+                4
+            )
+        END AS winrate,
         rw.pt,
         round(rw.pt / ps.sum :: DECIMAL, 4) AS "pt_share",
         hc.count as "helper_count",
@@ -112,10 +116,14 @@ SELECT
     sum(win) as "win",
     sum(draw) as "draw",
     sum(loss) as "loss",
-    round(
-        sum(win) / sum(helper_matchcount) :: DECIMAL,
-        4
-    ) AS "winrate",
+    CASE
+        sum(helper_matchcount)
+        WHEN 0 THEN 0
+        ELSE round(
+            sum(win) / sum(helper_matchcount) :: DECIMAL,
+            4
+        )
+    END AS winrate,
     sum(pt) as "pt",
     round(sum(pt) / sum(helper_pt) :: DECIMAL, 4) AS "pt_share"
 FROM

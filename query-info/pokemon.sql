@@ -3,7 +3,7 @@ WITH teams AS (
         tournament_id,
         team,
         two_nil + two_one AS win,
-        nil_two + one_two + double_loss AS loss,
+        nil_two + one_two AS loss,
         draw,
         point_award
     FROM
@@ -82,10 +82,14 @@ SELECT
     rr.win,
     rr.draw,
     rr.loss,
-    round(
-        rr.win / rr.match_played :: DECIMAL,
-        4
-    ) AS winrate,
+    CASE
+        rr.match_played
+        WHEN 0 THEN 0
+        ELSE round(
+            rr.win / rr.match_played :: DECIMAL,
+            4
+        )
+    END AS winrate,
     rw.pt,
     round(rw.pt / ps.sum :: DECIMAL, 4) AS "pt_share"
 FROM
@@ -99,4 +103,8 @@ FROM
 WHERE
     uu.tournament_id = 2
 ORDER BY
-    usage_share DESC, winrate DESC, pt_share DESC
+    usage_share DESC,
+    winrate DESC,
+    pt_share DESC,
+    win asc,
+    loss desc
