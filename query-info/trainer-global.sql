@@ -2,7 +2,7 @@ WITH trainerstanding AS (
     SELECT
         trainer_id,
         tournament_id,
-        two_nil + two_one AS win,
+        two_nil + two_one + bye AS win,
         nil_two + one_two + double_loss AS loss,
         draw,
         point_award
@@ -108,14 +108,15 @@ SELECT
     ss.loss,
     ss.draw,
     ss.winrate,
-    bi.pt as minor_pt
-    -- ba.pt as major_pt
+    bi.pt as minor_pt -- ba.pt as major_pt
 from
     trainer tt
     LEFT JOIN summary ss ON ss.trainer_id = tt.id
-    LEFT JOIN bfl_minor bi ON bi.trainer_id = tt.id
-    -- LEFT JOIN bfl_major ba ON bi.trainer_id = tt.id
+    LEFT JOIN bfl_minor bi ON bi.trainer_id = tt.id -- LEFT JOIN bfl_major ba ON bi.trainer_id = tt.id
 ORDER BY
     minor_pt DESC,
+    ss.winrate DESC,
+    ss.win DESC,
+    ss.loss ASC,
     ss.participation DESC,
-    tt.discord
+    tt.discord ASC
