@@ -11,6 +11,7 @@ INSERT INTO
         updated_by
     )
 VALUES
+(10,'Gin #7889','ginjr','gipaarrr','Muhammad Ghivar Arrofi','Gin','ID','pikuchanneru','pikuchanneru'),
 (44,'Mkh#3748','alvinsoyol','anabelvg_21','Mak Kwan Ho','AnabelVg','HK','pikuchanneru','pikuchanneru'),
 (77,'Kassiddy#0974','kischnp','Kassiddy_VGC','Kisch Cheng','Kassiddy','HK','pikuchanneru','pikuchanneru'),
 (55,'IBOIII#1111','dalisebastian06','notIBOIII','Dali Sebastian Putra Noviyanto','IBOIII','ID','pikuchanneru','pikuchanneru'),
