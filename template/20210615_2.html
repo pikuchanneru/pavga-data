@@ -1,0 +1,366 @@
+<html>
+
+<head>
+    <title>Lineup Test</title>
+
+    <script>
+        (function(d) {
+            var config = {
+                    kitId: 'zzs5oni',
+                    scriptTimeout: 3000,
+                    async: true
+                },
+                h = d.documentElement,
+                t = setTimeout(function() {
+                    h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+                }, config.scriptTimeout),
+                tk = d.createElement("script"),
+                f = false,
+                s = d.getElementsByTagName("script")[0],
+                a;
+            h.className += " wf-loading";
+            tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+            tk.async = true;
+            tk.onload = tk.onreadystatechange = function() {
+                a = this.readyState;
+                if (f || a && a != "complete" && a != "loaded") return;
+                f = true;
+                clearTimeout(t);
+                try {
+                    Typekit.load(config)
+                } catch (e) {}
+            };
+            s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
+
+    <style>
+        body {
+            background-color: black;
+            font-family: fot-udkakugo-large-pr6n, sans-serif;
+        }
+        
+        .con0 {
+            width: 70px;
+            height: 55px;
+            position: relative;
+        }
+        
+        .conl {
+            width: 4px;
+            height: 55px;
+            position: absolute;
+            left: 0px;
+        }
+        
+        .con1 {
+            width: 45px;
+            height: 55px;
+            position: absolute;
+            left: 4px;
+        }
+        
+        .con2 {
+            width: 45px;
+            height: 55px;
+            position: absolute;
+            left: 49px;
+        }
+        
+        .con3 {
+            width: 45px;
+            height: 55px;
+            position: absolute;
+            left: 94px;
+        }
+        
+        .con4 {
+            width: 45px;
+            height: 55px;
+            position: absolute;
+            left: 139px;
+        }
+        
+        .con5 {
+            width: 45px;
+            height: 55px;
+            position: absolute;
+            left: 184px;
+        }
+        
+        .con6 {
+            width: 45px;
+            height: 55px;
+            position: absolute;
+            left: 229px;
+        }
+        
+        .floor1 {
+            transform: translateX(50%);
+            position: absolute;
+            bottom: 2px;
+            right: 50%;
+            z-index: 0;
+        }
+        
+        .floor2 {
+            transform: scale(0.4);
+            position: absolute;
+            left: 70px;
+        }
+        
+        .mon1 {
+            transform: translateX(50%);
+            position: absolute;
+            bottom: 5px;
+            right: 50%;
+            z-index: 1;
+        }
+        
+        td {
+            height: 60px;
+            border: none;
+        }
+        
+        tr {
+            border: none;
+        }
+        
+        table {
+            border: 10px solid #00ff00;
+        }
+        
+        td.rank {
+            padding-left: 10px;
+            padding-right: 15px;
+            width: 50px;
+            font-size: 16pt;
+            color: white;
+            background-color: black;
+            text-align: right;
+            vertical-align: center;
+        }
+        
+        td.name {
+            padding-right: 10px;
+            padding-left: 15px;
+            width: 250px;
+            font-size: 16pt;
+            color: white;
+            background-color: black;
+            text-align: left;
+            vertical-align: center;
+        }
+		
+        td.iconmon {
+            padding-right: 15px;
+            padding-left: 15px;
+            width: 70px;
+            font-size: 16pt;
+            color: black;
+            background-color: white;
+            text-align: left;
+            vertical-align: center;
+        }
+        
+        td.loc {
+            padding-right: 10px;
+            padding-left: 10px;
+            font-size: 16pt;
+            color: black;
+            background-color: white;
+            text-align: right;
+            vertical-align: center;
+        }
+        
+        td.team {
+            padding-right: 5px;
+            padding-left: 5px;
+            font-size: 16pt;
+            color: black;
+            background-color: white;
+            text-align: center;
+            vertical-align: center;
+        }
+        
+        td.spacer {
+            width: 20px;
+            color: black;
+        }
+        
+        td.bronze {
+            background-color: #8C7853;
+            color: #690000;
+        }
+        
+        td.silver {
+            background-color: #E6E8FA;
+            color: #690000;
+        }
+        
+        td.gold {
+            background-color: #CFB53B;
+            color: #690000;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+		<tr>
+			<td class="rank">#1</td>
+            <td class="iconmon">
+                <div class="con0">
+					<img src="img/floor_s.png" class="floor1"/>
+					<img src="icon/Regieleki.png" class="mon1"/>
+				</div>
+			</td>
+			<td class="name">Regieleki</td>
+			<td class="loc">29</td>
+			<td class="loc">43.94%</td>
+			<td class="loc">50.60%</td>
+			<td class="loc">44.55%</td>
+        </tr>
+  <tr>
+			<td class="rank">#2</td>
+            <td class="iconmon">
+                <div class="con0">
+					<img src="img/floor_s.png" class="floor1"/>
+					<img src="icon/Incineroar.png" class="mon1"/>
+				</div>
+			</td>
+			<td class="name">Incineroar</td>
+			<td class="loc">24</td>
+			<td class="loc">36.36%</td>
+			<td class="loc">58.39%</td>
+			<td class="loc">50.24%</td>
+        </tr>
+  <tr>
+			<td class="rank">#3</td>
+            <td class="iconmon">
+                <div class="con0">
+					<img src="img/floor_s.png" class="floor1"/>
+					<img src="icon/Landorus-Therian.png" class="mon1"/>
+				</div>
+			</td>
+			<td class="name">Landorus-Therian</td>
+			<td class="loc">22</td>
+			<td class="loc">33.33%</td>
+			<td class="loc">55.63%</td>
+			<td class="loc">40.76%</td>
+        </tr>
+  <tr>
+			<td class="rank">#4</td>
+            <td class="iconmon">
+                <div class="con0">
+					<img src="img/floor_s.png" class="floor1"/>
+					<img src="icon/Rillaboom.png" class="mon1"/>
+				</div>
+			</td>
+			<td class="name">Rillaboom</td>
+			<td class="loc">19</td>
+			<td class="loc">28.79%</td>
+			<td class="loc">46.53%</td>
+			<td class="loc">23.22%</td>
+        </tr>
+  <tr>
+			<td class="rank">#5</td>
+            <td class="iconmon">
+                <div class="con0">
+					<img src="img/floor_s.png" class="floor1"/>
+					<img src="icon/Urshifu-RS.png" class="mon1"/>
+				</div>
+			</td>
+			<td class="name">Urshifu-RS</td>
+			<td class="loc">16</td>
+			<td class="loc">24.24%</td>
+			<td class="loc">53.06%</td>
+			<td class="loc">27.96%</td>
+        </tr>
+  <tr>
+			<td class="rank">#5</td>
+            <td class="iconmon">
+                <div class="con0">
+					<img src="img/floor_s.png" class="floor1"/>
+					<img src="icon/Urshifu-SS.png" class="mon1"/>
+				</div>
+			</td>
+			<td class="name">Urshifu-SS</td>
+			<td class="loc">16</td>
+			<td class="loc">24.24%</td>
+			<td class="loc">50.00%</td>
+			<td class="loc">24.17%</td>
+        </tr>
+  <tr>
+			<td class="rank">#5</td>
+            <td class="iconmon">
+                <div class="con0">
+					<img src="img/floor_s.png" class="floor1"/>
+					<img src="icon/Clefairy.png" class="mon1"/>
+				</div>
+			</td>
+			<td class="name">Clefairy</td>
+			<td class="loc">16</td>
+			<td class="loc">24.24%</td>
+			<td class="loc">38.16%</td>
+			<td class="loc">13.27%</td>
+        </tr>
+  <tr>
+			<td class="rank">#8</td>
+            <td class="iconmon">
+                <div class="con0">
+					<img src="img/floor_s.png" class="floor1"/>
+					<img src="icon/Tapu Fini.png" class="mon1"/>
+				</div>
+			</td>
+			<td class="name">Tapu Fini</td>
+			<td class="loc">15</td>
+			<td class="loc">22.73%</td>
+			<td class="loc">53.54%</td>
+			<td class="loc">30.33%</td>
+        </tr>
+  <tr>
+			<td class="rank">#9</td>
+            <td class="iconmon">
+                <div class="con0">
+					<img src="img/floor_s.png" class="floor1"/>
+					<img src="icon/Spectrier.png" class="mon1"/>
+				</div>
+			</td>
+			<td class="name">Spectrier</td>
+			<td class="loc">13</td>
+			<td class="loc">19.70%</td>
+			<td class="loc">44.59%</td>
+			<td class="loc">17.06%</td>
+        </tr>
+  <tr>
+			<td class="rank">#9</td>
+            <td class="iconmon">
+                <div class="con0">
+					<img src="img/floor_s.png" class="floor1"/>
+					<img src="icon/Celesteela.png" class="mon1"/>
+				</div>
+			</td>
+			<td class="name">Celesteela</td>
+			<td class="loc">13</td>
+			<td class="loc">19.70%</td>
+			<td class="loc">42.65%</td>
+			<td class="loc">10.43%</td>
+        </tr>
+  <tr>
+			<td class="rank">#9</td>
+            <td class="iconmon">
+                <div class="con0">
+					<img src="img/floor_s.png" class="floor1"/>
+					<img src="icon/Glastrier.png" class="mon1"/>
+				</div>
+			</td>
+			<td class="name">Glastrier</td>
+			<td class="loc">13</td>
+			<td class="loc">19.70%</td>
+			<td class="loc">33.33%</td>
+			<td class="loc">6.16%</td>
+        </tr>
+</body>
+
+</html>

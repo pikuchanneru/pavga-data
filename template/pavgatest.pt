@@ -1,0 +1,232 @@
+<html>
+
+<head>
+    <title>Lineup Test</title>
+
+    <script>
+        (function(d) {
+            var config = {
+                    kitId: 'zzs5oni',
+                    scriptTimeout: 3000,
+                    async: true
+                },
+                h = d.documentElement,
+                t = setTimeout(function() {
+                    h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+                }, config.scriptTimeout),
+                tk = d.createElement("script"),
+                f = false,
+                s = d.getElementsByTagName("script")[0],
+                a;
+            h.className += " wf-loading";
+            tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+            tk.async = true;
+            tk.onload = tk.onreadystatechange = function() {
+                a = this.readyState;
+                if (f || a && a != "complete" && a != "loaded") return;
+                f = true;
+                clearTimeout(t);
+                try {
+                    Typekit.load(config)
+                } catch (e) {}
+            };
+            s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
+
+    <style>
+        body {
+            background-color: black;
+            font-family: fot-udkakugo-large-pr6n, sans-serif;
+        }
+        
+        .con0 {
+            width: 70px;
+            height: 55px;
+            position: relative;
+        }
+        
+        .conl {
+            width: 4px;
+            height: 55px;
+            position: absolute;
+            left: 0px;
+        }
+        
+        .con1 {
+            width: 45px;
+            height: 55px;
+            position: absolute;
+            left: 4px;
+        }
+        
+        .con2 {
+            width: 45px;
+            height: 55px;
+            position: absolute;
+            left: 49px;
+        }
+        
+        .con3 {
+            width: 45px;
+            height: 55px;
+            position: absolute;
+            left: 94px;
+        }
+        
+        .con4 {
+            width: 45px;
+            height: 55px;
+            position: absolute;
+            left: 139px;
+        }
+        
+        .con5 {
+            width: 45px;
+            height: 55px;
+            position: absolute;
+            left: 184px;
+        }
+        
+        .con6 {
+            width: 45px;
+            height: 55px;
+            position: absolute;
+            left: 229px;
+        }
+        
+        .floor1 {
+            transform: translateX(50%);
+            position: absolute;
+            bottom: 2px;
+            right: 50%;
+            z-index: 0;
+        }
+        
+        .floor2 {
+            transform: scale(0.4);
+            position: absolute;
+            left: 70px;
+        }
+        
+        .mon1 {
+            transform: translateX(50%);
+            position: absolute;
+            bottom: 5px;
+            right: 50%;
+            z-index: 1;
+        }
+        
+        td {
+            height: 60px;
+            border: none;
+        }
+        
+        tr {
+            border: none;
+        }
+        
+        table {
+            border: 10px solid #00ff00;
+        }
+        
+        td.rank {
+            padding-left: 10px;
+            padding-right: 15px;
+            width: 50px;
+            font-size: 16pt;
+            color: white;
+            background-color: black;
+            text-align: right;
+            vertical-align: center;
+        }
+        
+        td.name {
+            padding-right: 10px;
+            padding-left: 15px;
+            width: 250px;
+            font-size: 16pt;
+            color: white;
+            background-color: black;
+            text-align: left;
+            vertical-align: center;
+        }
+		
+        td.iconmon {
+            padding-right: 15px;
+            padding-left: 15px;
+            width: 70px;
+            font-size: 16pt;
+            color: black;
+            background-color: white;
+            text-align: left;
+            vertical-align: center;
+        }
+        
+        td.loc {
+            padding-right: 10px;
+            padding-left: 10px;
+            font-size: 16pt;
+            color: black;
+            background-color: white;
+            text-align: right;
+            vertical-align: center;
+        }
+        
+        td.team {
+            padding-right: 5px;
+            padding-left: 5px;
+            font-size: 16pt;
+            color: black;
+            background-color: white;
+            text-align: center;
+            vertical-align: center;
+        }
+        
+        td.spacer {
+            width: 20px;
+            color: black;
+        }
+        
+        td.bronze {
+            background-color: #8C7853;
+            color: #690000;
+        }
+        
+        td.silver {
+            background-color: #E6E8FA;
+            color: #690000;
+        }
+        
+        td.gold {
+            background-color: #CFB53B;
+            color: #690000;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+		<tr tal:repeat="poke pokes">
+			<td class="rank" tal:content="poke.get_rank()">#3
+            </td>
+            <td class="iconmon">
+                <div class="con0">
+					<img src="img/floor_s.png" class="floor1"/>
+					<img src="icon/Landorus-Therian.png" class="mon1" tal:attributes="src 'icon/'+poke.get_name()+'.png'"/>
+				</div>
+			</td>
+			<td class="name" tal:content="poke.get_name()">Landorus-Therian
+            </td>
+			<td class="loc" tal:content="poke.get_count()">22
+            </td>
+			<td class="loc" tal:content="poke.get_usage()">33.33%
+            </td>
+			<td class="loc" tal:content="poke.get_winrate()">55.63%
+            </td>
+			<td class="loc" tal:content="poke.get_pt()">40.76%
+            </td>
+        </tr>
+</body>
+
+</html>

@@ -2,3 +2,5 @@
 creds.ini
 __pycache__/
 *.xlsx
+template/icon
+template/img
