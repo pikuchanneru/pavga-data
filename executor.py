@@ -185,7 +185,21 @@ if __name__ == "__main__":
     # execute(query, connection, cursor)
 
     # TODO: Change filename
-    query_fn = '200614-01 upsert-trainer-fix.sql'
+    # query_fn = '200614-01 upsert-trainer-fix.sql'
+    # path_q = os.path.join(os.getcwd(), "query", query_fn)
+    # with open(path_q, "r", encoding="utf8") as file:
+    #     query = file.read()
+    # execute(query, connection, cursor)
+
+    # TODO: Change filename
+    # query_fn = '200618-01 delete-standing-minor2.sql'
+    # path_q = os.path.join(os.getcwd(), "query", query_fn)
+    # with open(path_q, "r", encoding="utf8") as file:
+    #     query = file.read()
+    # execute(query, connection, cursor)
+
+    # TODO: Change filename
+    query_fn = '200618-02 upsert-standing-minor2.sql'
     path_q = os.path.join(os.getcwd(), "query", query_fn)
     with open(path_q, "r", encoding="utf8") as file:
         query = file.read()
