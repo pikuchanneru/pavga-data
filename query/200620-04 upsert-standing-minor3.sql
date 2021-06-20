@@ -28,7 +28,7 @@ VALUES
 (3,12,'{Clefairy,Spectrier,Regieleki,Urshifu-SS,Glastrier,Tapu Fini}','{Clefairy,Spectrier,Regieleki,Urshifu-SS-Gmax,Glastrier,Tapu Fini}',0,3,1,2,0,0,0,17,FALSE,17,1,NULL,NULL,'pikuchanneru','pikuchanneru'),
 (3,17,'{Blaziken,Zapdos,Tapu Fini,Tornadus,Metagross,Garchomp}',NULL,2,1,3,0,0,0,0,20,FALSE,20,1,NULL,NULL,'pikuchanneru','pikuchanneru'),
 (3,23,'{Tapu Koko,Rillaboom,Blastoise,Comfey,Celesteela,Marowak-Alola}','{Tapu Koko,Rillaboom-Gmax,Blastoise-Gmax,Comfey,Celesteela,Marowak-Alola}',1,3,1,2,0,0,0,11,FALSE,12,3,NULL,NULL,'pikuchanneru','pikuchanneru'),
-(3,25,'{Garchomp,Celesteela,Grimmsnarl,Incineroar,Tapu fini,Spectrier}',NULL,1,0,4,0,0,1,0,26,FALSE,26,1,NULL,NULL,'pikuchanneru','pikuchanneru'),
+(3,25,'{Garchomp,Celesteela,Grimmsnarl,Incineroar,Tapu Fini,Spectrier}',NULL,1,0,4,0,0,1,0,26,FALSE,26,1,NULL,NULL,'pikuchanneru','pikuchanneru'),
 (3,26,'{Snorlax,Mimikyu,Tapu Fini,Rotom-Heat,Dragapult,Indeedee-F}','{Snorlax-Gmax,Mimikyu,Tapu Fini,Rotom-Heat,Dragapult,Indeedee-F}',3,2,1,2,0,0,0,6,FALSE,6,5,NULL,NULL,'pikuchanneru','pikuchanneru'),
 (3,34,'{Spectrier,Rillaboom,Coalossal,Urshifu-RS,Togekiss,Grimmsnarl}','{Spectrier,Rillaboom-Gmax,Coalossal-Gmax,Urshifu-RS-Gmax,Togekiss,Grimmsnarl-Gmax}',1,0,0,1,0,0,0,38,TRUE,38,0,NULL,NULL,'pikuchanneru','pikuchanneru'),
 (3,35,'{Landorus-Therian,Tapu Fini,Thundurus,Stakataka,Incineroar,Cresselia}',NULL,3,3,2,1,0,0,0,8,FALSE,4,7,NULL,NULL,'pikuchanneru','pikuchanneru'),

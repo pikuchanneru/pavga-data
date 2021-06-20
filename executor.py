@@ -231,7 +231,7 @@ if __name__ == "__main__":
 
 
     # TODO: Change filename
-    query_fn = '.sql'
+    query_fn = '200620-04 upsert-standing-minor3.sql'
     path_q = os.path.join(os.getcwd(), "query", query_fn)
     with open(path_q, "r", encoding="utf8") as file:
         query = file.read()
