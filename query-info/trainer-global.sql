@@ -99,10 +99,11 @@ bfl_major as (
         bfl.trainer_id
 )
 SELECT
-    tt.discord,
-    tt.twitter,
-    tt.realname,
-    tt.country,
+    coalesce(tt.discord, ''),
+    coalesce(tt.battlefy, ''),
+    coalesce(tt.twitter, ''),
+    coalesce(tt.realname, ''),
+    coalesce(tt.country, ''),
     ss.participation,
     ss.win,
     ss.loss,
