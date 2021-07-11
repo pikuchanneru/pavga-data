@@ -13,7 +13,6 @@ VALUES
 ('Spray&Pray#3869','spraypray',NULL,NULL,'ハキ','JP','pikuchanneru','pikuchanneru'),
 ('PADO#9076','pado93','PadoVGC','Flavio Del Pidio','Pado','IT','pikuchanneru','pikuchanneru'),
 ('クロノ#4574','kurono_p','kurono_p',NULL,'クロノ','JP','pikuchanneru','pikuchanneru'),
-('bufer#9280','1391586106',NULL,'Ziliang He','本间芽衣子','CN','pikuchanneru','pikuchanneru'),
 ('darkmaster491#3629','darkmaster491','darkmaster491','Ricardo Guerra','Rick','US','pikuchanneru','pikuchanneru'),
 ('Mogar (They/Them)#8803','malcolmmackellar','MogarChu','Malcolm Mackellar','Mogar','AU','pikuchanneru','pikuchanneru'),
 ('Torviv#1321','torviv','TorvivVGC','Víctor','Torviv','ES','pikuchanneru','pikuchanneru'),
