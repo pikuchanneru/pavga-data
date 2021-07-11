@@ -89,7 +89,7 @@ bfl_major as (
         bfl.trainer_id,
         sum(bfl.point_award) as pt
     from
-        bfl_mi bfl
+        bfl_ma bfl
         left join trainer tt on bfl.trainer_id = tt.id
     where
         bfl_rank < 3
@@ -109,12 +109,17 @@ SELECT
     ss.loss,
     ss.draw,
     ss.winrate,
-    bi.pt as minor_pt -- ba.pt as major_pt
+    coalesce(bi.pt,0) as minor_pt,
+    coalesce(ba.pt,0) as major_pt,
+    coalesce(bi.pt,0) + coalesce(ba.pt,0) as total_pt
 from
     trainer tt
     LEFT JOIN summary ss ON ss.trainer_id = tt.id
-    LEFT JOIN bfl_minor bi ON bi.trainer_id = tt.id -- LEFT JOIN bfl_major ba ON bi.trainer_id = tt.id
+    LEFT JOIN bfl_minor bi ON bi.trainer_id = tt.id
+    LEFT JOIN bfl_major ba ON ba.trainer_id = tt.id
 ORDER BY
+    total_pt DESC,
+    major_pt DESC,
     minor_pt DESC,
     ss.winrate DESC,
     ss.win DESC,
