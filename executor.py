@@ -255,7 +255,39 @@ if __name__ == "__main__":
 
 
     # TODO: Change filename
-    query_fn = '200711-01 upsert-standing-major1.sql'
+    # query_fn = '200711-01 upsert-standing-major1.sql'
+    # path_q = os.path.join(os.getcwd(), "query", query_fn)
+    # with open(path_q, "r", encoding="utf8") as file:
+    #     query = file.read()
+    # execute(query, connection, cursor)
+
+
+    # TODO: Change filename
+    # query_fn = '200718-01 upsert-trainer-minor4-new.sql'
+    # path_q = os.path.join(os.getcwd(), "query", query_fn)
+    # with open(path_q, "r", encoding="utf8") as file:
+    #     query = file.read()
+    # execute(query, connection, cursor)
+
+
+    # TODO: Change filename
+    # query_fn = '200718-02 upsert-trainer-minor4-ret.sql'
+    # path_q = os.path.join(os.getcwd(), "query", query_fn)
+    # with open(path_q, "r", encoding="utf8") as file:
+    #     query = file.read()
+    # execute(query, connection, cursor)
+
+
+    # TODO: Change filename
+    # query_fn = '200718-03 upsert-tournament-minor4.sql'
+    # path_q = os.path.join(os.getcwd(), "query", query_fn)
+    # with open(path_q, "r", encoding="utf8") as file:
+    #     query = file.read()
+    # execute(query, connection, cursor)
+
+
+    # TODO: Change filename
+    query_fn = '200718-04 upsert-standing-minor4.sql'
     path_q = os.path.join(os.getcwd(), "query", query_fn)
     with open(path_q, "r", encoding="utf8") as file:
         query = file.read()
