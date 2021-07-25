@@ -26,7 +26,7 @@ VALUES
 (6,68,'{Regieleki,Urshifu-RS,Togekiss,Rillaboom,Heatran,Mamoswine}',NULL,2,3,0,1,0,0,0,1,FALSE,3,8,NULL,NULL,'pikuchanneru','pikuchanneru'),
 (6,112,'{Urshifu-RS,Coalossal,Rillaboom,Incineroar,Togekiss,Dragapult}',NULL,0,4,0,2,0,0,0,3,FALSE,4,8,NULL,NULL,'pikuchanneru','pikuchanneru'),
 (6,86,'{Thundurus,Landorus-Therian,Urshifu-SS,Jynx,Incineroar,Glastrier}',NULL,1,2,0,2,0,0,0,5,FALSE,5,6,NULL,NULL,'pikuchanneru','pikuchanneru'),
-(6,26,'{Porygon2,Marowak-Alola,Amoonguss,Blastoise,Celeestela,Landorus-Therian}',NULL,1,2,1,1,0,0,0,6,FALSE,6,6,NULL,NULL,'pikuchanneru','pikuchanneru'),
+(6,26,'{Porygon2,Marowak-Alola,Amoonguss,Blastoise,Celesteela,Landorus-Therian}',NULL,1,2,1,1,0,0,0,6,FALSE,6,6,NULL,NULL,'pikuchanneru','pikuchanneru'),
 (6,102,'{Torkoal,Venusaur,Indeedee-F,Hatterene,Urshifu-SS,Tauros}',NULL,0,3,0,2,0,0,0,7,FALSE,7,6,NULL,NULL,'pikuchanneru','pikuchanneru'),
 (6,83,'{Metagross,Spectrier,Grimmsnarl,Tapu Fini,Landorus-Therian,Rotom-Heat}',NULL,2,1,0,2,0,0,0,8,FALSE,8,6,NULL,NULL,'pikuchanneru','pikuchanneru'),
 (6,28,'{Mimikyu,Tapu Fini,Rillaboom,Stakataka,Venusaur,Torkoal}',NULL,1,1,1,1,0,1,0,9,FALSE,9,4,NULL,NULL,'pikuchanneru','pikuchanneru'),
