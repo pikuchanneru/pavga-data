@@ -311,7 +311,31 @@ if __name__ == "__main__":
 
 
     # TODO: Change filename
-    query_fn = '200725-01 upsert-standing-minor5.sql'
+    # query_fn = '200725-01 upsert-standing-minor5.sql'
+    # path_q = os.path.join(os.getcwd(), "query", query_fn)
+    # with open(path_q, "r", encoding="utf8") as file:
+    #     query = file.read()
+    # execute(query, connection, cursor)
+
+
+    # TODO: Change filename
+    # query_fn = '200731-01 upsert-trainer-minor6-new.sql'
+    # path_q = os.path.join(os.getcwd(), "query", query_fn)
+    # with open(path_q, "r", encoding="utf8") as file:
+    #     query = file.read()
+    # execute(query, connection, cursor)
+
+
+    # TODO: Change filename
+    # query_fn = '200731-02 upsert-tournament-minor6.sql'
+    # path_q = os.path.join(os.getcwd(), "query", query_fn)
+    # with open(path_q, "r", encoding="utf8") as file:
+    #     query = file.read()
+    # execute(query, connection, cursor)
+
+
+    # TODO: Change filename
+    query_fn = '200801-01 upsert-standing-minor6.sql'
     path_q = os.path.join(os.getcwd(), "query", query_fn)
     with open(path_q, "r", encoding="utf8") as file:
         query = file.read()

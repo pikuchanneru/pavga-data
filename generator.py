@@ -62,7 +62,7 @@ def load_connection_info(ini_filename):
 
 if __name__ == "__main__":
     # Set tournament id
-    tour_id = 6  # TODO
+    tour_id = 7  # TODO
 
     # Create global params
     today = date.today().strftime("%Y%m%d")
